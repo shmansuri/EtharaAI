@@ -15,9 +15,7 @@ SECRET_KEY = os.getenv("SECRET_KEY", "fallback-dev-key")  # Always set in Render
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
 # Allowed hosts
-ALLOWED_HOSTS = [
-    os.getenv("RENDER_EXTERNAL_HOSTNAME", "hrms.onrender.com"),
-]
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 INSTALLED_APPS = [
