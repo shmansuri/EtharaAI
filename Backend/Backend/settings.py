@@ -11,8 +11,8 @@ load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY
-SECRET_KEY = os.getenv("SECRET_KEY", "fallback-dev-key")  # Always set in Render secrets
-DEBUG = os.getenv("DEBUG", "False") == "True"
+SECRET_KEY = 'django-insecure-lb-d4bc%08fj0daaor8#so(&kjdi3=u=$0qw$^@7=18n1=ig%k'  # Always set in Render secrets
+DEBUG = True
 
 # Allowed hosts
 ALLOWED_HOSTS = ['*']
@@ -81,9 +81,9 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # Internationalization
-LANGUAGE_CODE = 'en-us'
-TIME_ZONE = 'UTC'
-USE_I18N = True
+LANGUAGE_CODE = 'en-us' 
+TIME_ZONE = 'UTC' 
+USE_I18N = True 
 USE_TZ = True
 
 # Static files
@@ -93,7 +93,7 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # CORS
 CORS_ALLOWED_ORIGINS = [
-    os.getenv("FRONTEND_URL", "http://localhost:5173")
+    'https://assinment-ethara.netlify.app'
 ]
 
 
